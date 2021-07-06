@@ -25,9 +25,9 @@ int main()
   for(int i=1;i<n+1;i++){
     cout<<i<<"->";
     for(auto it:dir_adj[i]){
-        cout<<",("<<it.first<<","<<it.second<<") ";
+        cout<<"("<<it.first<<","<<it.second<<"),";
     }
-    cout<<endl;
+    cout<<"\b"<<endl;
   }
   return 0;
 
